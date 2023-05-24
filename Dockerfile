@@ -3,7 +3,7 @@ FROM python:latest
 
 
 #Labels as key value pair
-LABEL Maintainer="roushan.me17"
+LABEL Maintainer="Tushar"
 
 
 # Any working directory can be chosen as per choice like '/' or '/home' etc
@@ -11,11 +11,9 @@ LABEL Maintainer="roushan.me17"
 WORKDIR /usr/app/src
 
 #to COPY the remote file at working directory in container
-COPY new.py ./
+COPY test.py ./
 # Now the structure looks like this '/usr/app/src/test.py'
 
-
-#CMD instruction should be used to run the software
 #contained by your image, along with any arguments.
 
-CMD [ "python", "./new.py"]
+CMD [ "python", "./test.py"]
